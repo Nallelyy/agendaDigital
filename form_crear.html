@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Crear contacto</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+	<div class="card" id="card_form" >
+		<div class="card-body">	
+		<form class="needs-validation" novalidate id="contacto_form" >
+		<div class="container">
+			<div class="form-group">
+				<label for="nombre" class="card-text-title">Nombre:</label>
+	 		    <input type="text" class="form-control" id="nombre" placeholder="Ingrese nombre" required>
+
+				<label for="tel_personal" class="card-text-title">Telefono personal:</label>
+	 		    <input type="tel" class="form-control" id="tel_personal" placeholder="Ingrese Teléfono Personal" required>
+
+	 		    <label for="tel_oficina" class="card-text-title">Telefono Oficina:</label>
+	 		    <input type="tel" class="form-control" id="tel_oficina" placeholder="Ingrese Teléfono Oficina" required>
+
+				<label for="email_personal">Email Personal:</label>
+	 		    <input type="email" class="form-control" id="email_personal" placeholder="Ingrese Email Personal" required>
+
+	 		    <label for="email_oficina">Email Oficina:</label>
+	 		    <input type="email" class="form-control" id="email_oficina" placeholder="Ingrese Email Oficina" required>
+
+	 		    <label for="cumple">Fecha Cumpleaños:</label>
+	 		    <input type="date" class="form-control" id="cumple" placeholder="Ingrese Fecha Cumpleaños" required>
+			</div>
+			<button type="button" class="btn btn-primary" id="btn_save_contact">Guardar</button>
+		</div>
+	</div>
+
+	</form>
+	</div>
+	
+	 <script src="./consultas.js"></script>
+</body>
+</html>
